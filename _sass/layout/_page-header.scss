@@ -2,8 +2,24 @@
 $true-header-height:  calc($header-height - $bar-height);
 
 .page-header {
-    height: $true-header-height;
-    padding-top: $bar-height + 4vh;
+    min-height: $true-header-height;
+    padding-top: $bar-height;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    background-color: $white;
+    background-size: 30px 30px;
+    background-image:
+        linear-gradient(to right, grey 1px, transparent 1px),
+        linear-gradient(to bottom, grey 1px, transparent 1px);
+    @include shadow;
+}
+
+.page-header-group {
+    width: 100%;
 
     display: grid;
     grid-template: {
@@ -12,13 +28,6 @@ $true-header-height:  calc($header-height - $bar-height);
     };
 
     text-align: center;
-
-    background-color: $white;
-    background-size: 30px 30px;
-    background-image:
-        linear-gradient(to right, grey 1px, transparent 1px),
-        linear-gradient(to bottom, grey 1px, transparent 1px);
-    @include shadow;
 }
 
 .header-anim {

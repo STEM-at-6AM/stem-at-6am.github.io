@@ -1,8 +1,11 @@
 
 <header class="page-header">
-    {% capture filename %}animation/{{name}}.html{% endcapture %}
-    <div class="header-anim" id="{{name}}">
-        {% include {{filename}} %}
+    {% include breadcrumbs.html %}
+    <div class="page-header-group">
+        {% capture filename %}animation/{{name}}.html{% endcapture %}
+        <div class="header-anim" id="{{name}}">
+            {% include {{filename}} %}
+        </div>
+        <h1 id="page-title">{{page.title}}</h1>
     </div>
-    <h1 id="page-title">{{page.title}}</h1>
 </header>

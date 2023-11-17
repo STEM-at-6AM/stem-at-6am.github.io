@@ -8,13 +8,15 @@ layout: default
     }
 </style>
 
-{% include breadcrumbs.html %}
-
 <header id="post-header">
     <div id="post-banner">
-        <h1 id="post-title">{{ page.title }}</h1>
-        <p id="img-license"><small>{{ page.img-attr }}</small></p>
-    </div>        
+        {% include breadcrumbs.html %}
+        <div id="post-banner-group">
+            <h1 id="post-title">{{ page.title }}</h1>
+            <p id="img-license"><small>{{ page.img-attr }}</small></p>
+        </div>
+    </div>
+
     <p id="post-subtitle">{{ page.description }}</p>
 
 </header>

@@ -12,9 +12,9 @@
     flex: 1 1 auto;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
 
     padding-top: $bar-height;
 
@@ -22,6 +22,16 @@
     background-position: center;
     background-color: $aqua;
     @include shadow;
+}
+
+#post-banner-group {
+    width: 100%;
+    flex: 1 1 auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 #post-title {
