@@ -1,0 +1,45 @@
+
+footer {
+    max-width: 100%;
+    height: $bar-height;
+    flex-basis: content;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    padding: 1vh;
+
+    background-color: $aqua;
+}
+
+.footer-container {
+    max-height: $bar-height;
+    @include flex-grow-thresh;
+
+    display: flex;
+    flex-direction: row;
+
+    * {
+        height: $bar-height;
+    }
+}
+
+#footer-logo-container {
+    justify-content: center;
+}
+
+#footer-icon-container {
+    justify-content: center;
+}
+
+.footer-icon {
+    display: flex;
+    align-items: center;
+
+    padding: 0 1rem;
+
+    img {
+        height: $bar-height * 0.6;
+    }
+}

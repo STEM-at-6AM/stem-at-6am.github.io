@@ -1,0 +1,32 @@
+.dropdown {
+
+    .dropbtn {
+        font-family: inherit;
+        cursor: pointer;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+
+        ul, ol {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+    
+        .dropdown-item {
+            display: block;
+            
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+    &:hover {
+        .dropdown-content {
+            display: block;
+        }
+    }
+}
+

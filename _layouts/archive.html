@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<main class="page-main">
+    
+    <div class="heading">
+        <h2>Posts tagged "{{page.filter}}"</h2>
+    </div>
+
+    {% assign posts=site.categories[{{page.filter}}] %}
+    {% include postcards.html posts=posts limit=1000 %}
+
+</main>

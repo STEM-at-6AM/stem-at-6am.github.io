@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+{% include breadcrumbs.html %}
+
+{% capture name %}{{ page.title | slugify }}{% endcapture %}
+
+{% include page-header.html %}
+
+<main class=postlist-main>
+
+    <!-- <div class="page-message">
+        {{ content }}
+    </div> -->
+
+    <ul class="postlist-container">
+
+        {% for post in site.categories[{{name}}] reversed %}
+
+            <li>
+                <article class="postlist-item">
+
+                    <div>
+                        <h2 class="postlist-title"><a href="{{post.url}}">{{ post.title }}</a></h2>
+                        <p class="postlist-subtitle">{{ post.description }}</p>
+                    </div>
+                    
+                    <!-- <div class="postlist-author">
+                        <div class="author-pic"></div>
+                        <p class="author-name">{{ post.author }}</p>
+                    </div> -->
+                    
+                    <div class="postlist-desc">{{ post.excerpt }}</div>
+
+                </article>
+            </li>
+
+        {% endfor %}
+        
+    </ul>
+
+</main>

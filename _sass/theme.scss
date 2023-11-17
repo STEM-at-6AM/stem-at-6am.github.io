@@ -1,0 +1,70 @@
+
+@import "helpers/breakpoints";
+@import "helpers/colors";
+@import "helpers/media-query";
+@import "helpers/shape";
+
+@import "animation/physics";
+@import "animation/newtonian-mechanics";
+
+@import "components/dropdown";
+@import "components/headings";
+@import "components/categories";
+@import "components/tags";
+@import "components/breadcrumbs";
+
+@import "layout/navbar";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/postcards";
+@import "layout/post-header";
+@import "layout/page-header";
+@import "layout/postlist";
+
+@import "pages/post";
+@import "pages/page";
+@import "pages/404";
+
+@import url('https://fonts.googleapis.com/css2?family=Teko');
+
+@font-face {
+    font-family: trebuchet-adjust;
+    src: local("Trebuchet MS");
+    size-adjust: 75%;
+}
+
+@font-face {
+    font-family: arial-adjust;
+    src: local(Arial);
+    size-adjust: 75%;
+}
+
+// set base font size
+html {
+    // small screen 
+    font-size: 11pt;
+    // large screen 
+    @include screen-min(1000px){font-size: 14pt;};
+
+    font-family: Teko, trebuchet-adjust, arial-adjust;
+    // font-family: arial-adjust;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+
+    margin: 0;
+
+    background-color: $beige;
+}
+
+main {
+    flex-grow: 1;
+}
+.page-main {
+    padding: 1%;
+}
+

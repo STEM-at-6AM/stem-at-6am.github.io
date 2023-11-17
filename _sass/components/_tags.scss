@@ -1,0 +1,20 @@
+.post-tag-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.post-tag {
+    margin: 0.2rem 0.2rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: $corner-tag;
+
+    text-decoration: none;
+    color: $white;
+
+    background-color: $blue;
+
+    &:hover {
+        background-color: $dark-blue;
+    }
+}

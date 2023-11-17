@@ -1,0 +1,31 @@
+$offwhite: #f5f5f5;
+$brown: #300000;
+$beige: #e7cece;
+$blue: #6cabef;
+$dark-blue: #3e90e7;
+$aqua: #00c8ff;
+$red: #b51515;
+$white: #ffffff;
+$gray: #808080;
+
+$shadow: rgba($brown, 0.35);
+@mixin shadow($soft:true) {
+    @if $soft {
+        box-shadow: 0 8px 16px $shadow;
+    } @else {
+        box-shadow: 0px 1px 8px $shadow;
+    }
+};
+
+@mixin to-red() {
+    filter: (
+        brightness(0) 
+        saturate(100%) 
+        invert(17%) 
+        sepia(61%) 
+        saturate(2485%) 
+        hue-rotate(340deg) 
+        brightness(115%) 
+        contrast(116%)
+    );
+}

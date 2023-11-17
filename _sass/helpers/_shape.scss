@@ -1,0 +1,22 @@
+%grow {
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+$corner-small: 5px;
+$corner-large: 10px;
+$corner-tag: 1rem;
+
+$container-margin: (1rem 0);
+$item-margin: 0.5rem;
+
+$header-height: 40vh;
+$bar-height: 8vh;
+
+@keyframes hide {
+    0%, 100% {
+        visibility: hidden;
+    }
+}

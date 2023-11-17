@@ -1,0 +1,87 @@
+
+@mixin orbit($size) {
+    width: $size;
+    height: $size;
+    border-radius: 100%;
+
+    position: absolute;
+    top: calc(50% - ($size / 2));
+    left: calc(50% - ($size / 2));
+
+    border: 3px solid $blue;
+}
+
+@mixin orbit-circle($size, $X, $Y, $transform: true) {
+    width: $size;
+    height: $size;
+    border-radius: 100%;
+
+    position: absolute;
+    top: $Y;
+    left: $X;
+    @if $transform {
+        transform: translate(-50%, -50%);
+    }
+
+    background-color: $blue;
+}
+
+@mixin physics-anim-container($container-height, $anim-repeat) {
+
+    $outer-orbit-size: calc($container-height * 0.8);
+    $inner-orbit-size: calc($outer-orbit-size * 0.55);
+
+    $orbit-circle-size: calc(($container-height - $outer-orbit-size) * 0.5);
+
+    $center-circle-size: calc($inner-orbit-size * 0.4);
+    $center-circle-offset: calc(50% - ($center-circle-size / 2.4));
+    // $center-circle-offset: 50%;
+
+    #orbit-outer {
+        @include orbit($outer-orbit-size);
+        animation: spin 2s linear $anim-repeat;
+    }
+    
+    #orbit-outer-circle {
+        @include orbit-circle($orbit-circle-size, 50%, 0);
+    }
+    
+    #orbit-inner {
+        @include orbit($inner-orbit-size);
+
+        @if $anim-repeat != infinite {
+            animation: spin 1s linear calc($anim-repeat * 2);
+        } @else {
+            animation: spin 1s linear $anim-repeat;
+        }
+    }
+    
+    #orbit-inner-circle {
+        @include orbit-circle($orbit-circle-size, 0%, 50%);
+    }
+    
+    #orbit-center-circle {
+        @include orbit-circle(
+            $center-circle-size, 
+            $center-circle-offset, 
+            $center-circle-offset, 
+            $transform: false
+        );
+    }
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+li#physics.category:hover {
+    #orbit-inner {
+        animation: spin 1s linear infinite;
+    }
+
+    #orbit-outer {
+        animation: spin 2s linear infinite;
+    }
+}

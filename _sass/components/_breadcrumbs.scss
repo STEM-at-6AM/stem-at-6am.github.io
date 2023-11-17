@@ -1,0 +1,32 @@
+
+#breadcrumbs {
+    width: 100%;
+
+    padding: {
+        top: $bar-height;
+    };
+
+    z-index: 4;
+
+    position: absolute;
+
+    background-color: rgba($white, $alpha: 0.7);
+
+    p {
+        margin: 0.5rem;
+
+        font-size: 14pt;
+
+        * {
+            margin: 0 0.2rem;
+            color: $brown;
+        }
+        a {
+            text-transform: capitalize;
+        }
+
+        span, a:hover {
+            color: $red;
+        }
+    }
+}

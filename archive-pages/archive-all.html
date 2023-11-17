@@ -1,0 +1,17 @@
+---
+layout: default
+title: Archive
+permalink: archive
+---
+
+{% include header.html %}
+
+<main class="page-main">
+    
+    <div class="heading">
+        <h2>All Posts</h2>
+    </div>
+    
+    {% include postcards.html posts=site.posts limit=1000%}
+
+</main>

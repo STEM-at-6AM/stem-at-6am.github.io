@@ -1,0 +1,60 @@
+
+@mixin apple-drop($name, $container-size) {
+    @keyframes #{$name} {
+        0% {
+            transform: translateY(-0.7 * $container-size) rotate(-20deg);
+        }
+        30% {
+            transform: translateY($container-size * 0.33) rotate(-20deg); 
+        }
+        40%, 100% {
+            transform: translate($container-size * -0.2, $container-size * 0.15) rotate(-30deg);
+        }
+    }
+}
+
+@mixin newton-anim-container($container-size, $anim-name, $anim-repeat) {
+    
+    $apple-size: calc($container-size * 0.3);
+
+    #apple {
+        width: $apple-size;
+    
+        position: absolute;
+        top: calc(50% - ($apple-size / 2));
+        left: calc(50% - ($apple-size / 2));
+    
+        transform: rotate(-20deg);
+    
+        animation: $anim-name 2s ease-in $anim-repeat;
+        color: $blue;
+    }
+    
+    #fall-lines {
+        width: $apple-size;
+        height: $apple-size;
+    
+        position: absolute;
+        top: calc(20% - ($apple-size / 2));
+        left: calc(50% - ($apple-size / 2));
+    
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: start;
+    
+        animation: hide 2s none $anim-repeat;
+    
+        div {
+            width: 5%;
+            border-radius: 10px;
+            background-color: $blue;
+        }
+    
+        #line-1 {height: 60%;}
+        #line-2 {height: 80%;}
+        #line-3 {height: 40%;}
+    }
+
+    @include apple-drop($anim-name, $container-size);
+}

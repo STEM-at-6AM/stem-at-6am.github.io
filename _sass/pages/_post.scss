@@ -1,0 +1,89 @@
+
+.post-wrapper {
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.post-container {
+    margin: 0.5rem 1rem;
+    padding: 1rem 0.5rem;
+    border-radius: $corner-large;
+
+    background-color: $white;
+}
+
+#post-meta {
+    max-width: 1000px;
+    @include screen-min($on-tablet + 340px){
+        width: 15vw;
+    }
+
+    @include flex-grow-thresh($on-tablet + 340px);
+}
+
+#post-author-date {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-bottom: 0.5rem;
+}
+
+.author-name {
+    margin: 0.1rem 0.5rem;
+}
+
+.author-pic {
+    width: 50px;
+    height: 50px;
+    flex: 0 0 auto;
+
+    border-radius: $corner-small;
+
+    background-color: black;
+}
+
+#post-date {
+    margin: 0.1rem 0.5rem;
+    color: $red;
+}
+
+#post-content {
+    max-width: 1000px;
+    min-width: 0;
+
+    flex: 1 1 auto;
+
+    font-family: "Trebuchet MS", Arial, sans-serif;
+
+    * {
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    strong {
+        color: $red;
+    }
+
+    a {
+        color: $dark-blue;
+    }
+
+    img {
+        width: 100%;
+        max-width: 800px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    blockquote {
+        font-family: serif;
+        font-style: italic;
+    }
+}

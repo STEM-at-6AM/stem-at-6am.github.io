@@ -1,0 +1,17 @@
+
+.page-message {
+    max-width: 1000px;
+    min-width: 0;
+
+    margin: 1rem 0.5rem;
+    padding: 1rem;
+    border-radius: $corner-large;
+    
+    font-size: 1.5rem;
+    color: $white;
+    background-color: $red;
+
+    * {
+        margin: 0;
+    }
+}

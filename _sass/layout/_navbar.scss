@@ -1,0 +1,97 @@
+$navbar-pad: 1vh;
+$navbar-height: $bar-height - (2 * $navbar-pad);
+
+#navbar {
+    width: calc(100% - 2 * $navbar-pad);
+    height: $navbar-height;
+    max-height: 60px;
+    position: fixed;
+    z-index: 5;
+
+    display: grid;
+    grid-template: {
+        columns: auto auto 1fr auto;
+        rows: 100%;
+    };
+
+    padding: $navbar-pad;
+
+    background-color: $offwhite;
+    @include shadow($soft: false);
+}
+
+#nav-logo-link {
+    grid-column: {
+        start: 1;
+        end: 2;
+    };
+
+    #nav-logo {
+        height: $navbar-height;
+        max-height: 100%;
+        border-radius: $corner-small;
+    }
+}
+
+#nav-menu {
+
+    button {
+        height: 100%;
+
+        padding: 0 1rem;
+        border: none;
+
+        font-size: 22pt;
+        color: $brown;
+
+        background-color: $offwhite;
+    }
+    &:hover {
+        button{
+            color: $red !important;
+        }
+    }
+
+    div {
+        z-index: 4;
+
+        background-color: $offwhite;
+        @include shadow;
+
+        .dropdown-item {
+            min-width: 160px;
+
+            padding: 0.5rem 1rem;
+
+            font-size: 1.5rem;
+
+            &:hover {
+                background-color: $beige;
+            }
+
+            * {
+                color: $brown;
+            }
+        }
+    }
+
+}
+
+#nav-rss-link {
+    grid-column: {
+        start: -2;
+        end: -1;
+    };
+
+    display: flex;
+    align-items: center;
+
+    #nav-rss {
+        height: calc($navbar-height * 0.6);
+        max-height: 60%;
+
+        &:hover {
+            @include to-red;
+        }
+    }
+}

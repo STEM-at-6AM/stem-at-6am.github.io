@@ -1,0 +1,88 @@
+
+.postlist-main {
+    padding: 1%;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.postlist-container {
+    max-width: 1000px;
+    min-width: 0;
+
+    // flex: 1 1 auto;
+
+    margin: 1rem 0.5rem;
+    padding: 0 1rem;
+
+    border-radius: $corner-large;
+    list-style-type: none;
+
+    background-color: $white;
+
+    li:last-child {
+        .postlist-item {
+            border: none;
+        }
+    }
+}
+
+.postlist-item {
+    max-width: 100%;
+    padding: 1rem 0;
+    border-bottom: 1px solid gray;
+}
+
+.postlist-title {
+    margin: 0;
+
+    font-size: 2rem;
+    color: $brown;
+
+    a {
+        text-decoration: underline;
+        color: inherit;
+
+        &:hover {
+            color: $red;
+        }
+    }
+}
+
+.postlist-subtitle {
+    margin: 0;
+
+    font-size: 1.5rem;
+    color: $red;
+}
+
+.postlist-author {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin: 0.5rem 0;
+
+    .author-pic {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .author-name {
+        color: $brown;
+    }
+}
+
+.postlist-desc {
+    font-size: 1rem;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+
+    margin: 0;
+
+    p {
+        margin: 0;
+    }
+}

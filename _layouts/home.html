@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+{%- include header.html -%}
+
+<!-- main content -->
+<main class="page-main">
+
+    <section>
+        <!-- page heading 1 -->
+        <div class="heading">
+            <h2>Breakfast Menu</h2>
+        </div>
+
+        <!-- categories -->
+        <ul class="category-container">
+
+            {% for category in site.data.categories %}
+
+                {% if category[0] != "meta" %}
+                    <li class="category" id="{{ category[0] }}">
+                        
+                        {% capture filename %}animation/{{ category[0] }}.html{% endcapture %}                                
+                        <div class="category-anim">
+                            {% include {{filename}} %}
+                        </div>
+                        
+                        <a href="{{category[0]}}">{{ category[0] }}</a>
+                    </li>
+                {% endif %}
+
+            {% endfor %}
+
+        </ul>
+    </section>
+
+    <section>
+
+        <!-- page heading 2 -->
+        <div class="heading">
+            <h2>Latest</h2>
+        </div>
+
+        <!-- posts -->
+        {% include postcards.html posts=site.posts more=true%}
+
+    </section>
+ 
+
+</main>

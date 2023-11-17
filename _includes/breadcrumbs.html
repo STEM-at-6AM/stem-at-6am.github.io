@@ -1,0 +1,25 @@
+
+{% if page.categories contains "meta" %}
+<nav id="breadcrumbs">
+    <p>
+        <a href="/">Home</a>
+         > <span>{{page.title}}</span>
+    </p>
+</nav>
+
+{% else %}
+<nav id="breadcrumbs">
+    <p>
+        {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+        <a href="/">Home</a>
+        {% for crumb in crumbs offset: 1 %}
+            {% if forloop.last %}
+                > <span>{{ page.title }}</span>
+            {% else %}
+                > <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
+            {% endif %}
+        {% endfor %}
+    </p>
+</nav>
+
+{% endif %}

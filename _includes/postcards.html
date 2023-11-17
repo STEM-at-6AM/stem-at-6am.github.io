@@ -1,0 +1,26 @@
+
+<ul class="postcard-container">
+
+    {% for post in include.posts limit:{{ include.limit | default: 5 }} %}
+
+        <li>
+            <article class="postcard">
+
+                <h3 class="postcard-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                <div class="postcard-desc">{{ post.excerpt }}</div>
+
+                <div class="postcard-misc">
+                    <time class="postcard-date" datetime="{{ post.date }}">{{ post.date | date: "%d %b %Y"}}</time>
+                    {% include tags.html tags=post.categories%}
+                </div>
+
+            </article>
+        </li>
+
+    {% endfor %}
+
+    {% if include.more == true %}
+        <a class="see-more" href="archive">More...</a>
+    {% endif %}
+
+</ul>

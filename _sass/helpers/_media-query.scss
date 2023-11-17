@@ -1,0 +1,23 @@
+@mixin screen-min($min, $invert: false) {
+
+    @if $invert {
+        @media not all and (min-width: $min) {
+            @content
+        }
+    } @else {
+        @media all and (min-width: $min) {
+            @content
+        }
+    }    
+};
+
+@mixin flex-grow-thresh($thresh: $on-palm) {
+    // if screen size larger than (or == to) breakpoint 
+    @include screen-min($thresh) {
+        flex-grow: 0;
+    };
+    // if screen size smaller than breakpoint 
+    @include screen-min($thresh, true){
+        flex-grow: 1;
+    };
+};
