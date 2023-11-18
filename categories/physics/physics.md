@@ -1,6 +1,6 @@
 ---
 layout: category-super
 title: Physics
-permalink: /physics
+permalink: /physics/
 ---
 

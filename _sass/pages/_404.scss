@@ -8,7 +8,7 @@
     padding: 1%;
 }
 
-.content-container {
+.content-container-404 {
     max-width: 1000px;
     min-width: 0;
 
@@ -35,6 +35,10 @@
     font-size: 3rem;
 }
 
-#desc-404 {
+#desc-404, #redirect-404 {
     font-size: 2rem;
+
+    a {
+        color: $dark-blue;
+    }
 }
