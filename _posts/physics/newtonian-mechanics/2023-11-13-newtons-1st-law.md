@@ -8,7 +8,7 @@ author: Beth Diamond
 date:   2023-11-13 06:00:00 +0000
 categories: physics newtonian-mechanics
 
-image: "assets/img/posts/physics/newtonian-mechanics/newtons-1st-law/london_buses.jpg"
+image: "assets/posts/physics/newtonian-mechanics/newtons-1st-law/london_buses.jpg"
 img-attr: "\"London Buses on Whitehall\" by duncanh1 on Flickr is licensed under CC BY 2.0"
 
 permalink: /:categories/:title
