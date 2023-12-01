@@ -62,6 +62,13 @@ $true-header-height:  calc($header-height - $bar-height);
     );
 }
 
+#maths.header-anim {
+    @include maths-anim-container(
+        $true-header-height,
+        infinite
+    );
+}
+
 #page-title {
     grid-column: {
         start: 1;
