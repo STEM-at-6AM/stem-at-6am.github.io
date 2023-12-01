@@ -1,0 +1,48 @@
+@mixin pop-in($delay, $repeat: infinite) {
+
+    animation: pop-in 2s ease-out $repeat;
+    animation-delay: $delay;
+
+    @keyframes pop-in {
+        9% {
+            opacity: 1;
+            transform: scale(1.3, 1.3);
+        }
+        15% {
+            opacity: 1;
+            transform: scale(1, 1);
+        }
+    }
+}
+
+@mixin maths-anim-container($container-size, $anim-repeat) {
+    
+    .maths-symbol {
+        height: calc($container-size / 3);
+        position: absolute;
+    
+        &:nth-child(2n) {
+            right: 15%;
+        }
+        &:nth-child(2n+1) {
+            left: 10%;
+        }
+        
+        &:nth-child(1) {
+            top: 5%;
+            @include pop-in(0s, $anim-repeat);
+        }
+        &:nth-child(2) {
+            top: 15%;
+            @include pop-in(0.2s, $anim-repeat);
+        }
+        &:nth-child(3) {
+            top: 50%;
+            @include pop-in(0.4s, $anim-repeat);
+        }
+        &:nth-child(4) {
+            top: 60%;
+            @include pop-in(0.6s, $anim-repeat)
+        }
+    }
+}
