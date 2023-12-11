@@ -83,6 +83,22 @@ $category-height: 150px;
     }
 }
 
+#maths.category {
+    .category-anim {
+        @include maths-anim-container(
+            $category-height,
+            3
+        );
+    }
+
+    &:hover {
+        @include maths-anim-container(
+            $category-height,
+            infinite
+        );
+    }
+}
+
 #newtonian-mechanics.category {
     $anim-name: apple-drop-small;
 

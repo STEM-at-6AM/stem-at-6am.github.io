@@ -1,0 +1,18 @@
+<mrow>
+    <mo>(</mo>
+    <mtable>
+        <mtr>
+            <mtd>
+                <mn>
+                    {% assign a=include.a %}{{ a }}
+                </mn>
+            </mtd>
+        </mtr>
+        <mtr>
+            <mtd>
+                <mn>{% assign b=include.b %}{{ b }}</mn>
+            </mtd>
+        </mtr>
+    </mtable>
+    <mo>)</mo>
+</mrow>
