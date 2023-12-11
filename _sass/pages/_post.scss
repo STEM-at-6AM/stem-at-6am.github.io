@@ -76,14 +76,23 @@
     }
 
     img {
-        width: 100%;
-        max-width: 800px;
+        max-height: 70vh;
+        max-width: 100%;
         display: block;
-        margin: 0 auto;
+        margin: 2rem auto;
     }
 
     blockquote {
         font-family: serif;
         font-style: italic;
+    }
+
+    // for MathML styling
+    math * {
+        margin: 0;
+    }
+
+    mjx-container * {
+        margin: 0;
     }
 }
