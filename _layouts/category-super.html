@@ -20,7 +20,7 @@ layout: default
                         {% include {{filename}} %}
                     </div>
 
-                    <a href="{{page.url}}/{{category}}">{{ category | replace: "-", " " }}</a>
+                    <a href="{{page.url}}{{category}}">{{ category | replace: "-", " " }}</a>
                 </li>
             {% endfor %}
 
