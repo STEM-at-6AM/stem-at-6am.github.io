@@ -22,10 +22,24 @@ title: STEM@6AM
 description: >- # this means to ignore newlines until "baseurl:"
   Science so simple, you'll understand it before your morning coffee!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://stemat6am.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 logo: "assets/img/static/logo.png"
 locale: en_GB
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      image: "assets/img/static/logo-500.png"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: /:categories/:title
 
 # Build settings
 markdown: kramdown

@@ -10,8 +10,6 @@ categories: physics newtonian-mechanics
 
 image: "assets/posts/physics/newtonian-mechanics/newtons-1st-law/london_buses.jpg"
 img-attr: "\"London Buses on Whitehall\" by duncanh1 on Flickr is licensed under CC BY 2.0"
-
-permalink: /:categories/:title
 ---
 
 Whether we’re on the bus, the tram, or the tube, we all dread being thrown backwards into the lap of an unsuspecting stranger when the thing starts moving before you’ve found a seat. But why do we get thrown backwards anyway? Aren’t we moving forwards? If you’ve ever found yourself meekly apologising to a fellow passenger and thinking _“Why did THIS have to happen!?”_ then read on, because it can all be explained by **Newton’s 1st Law**.

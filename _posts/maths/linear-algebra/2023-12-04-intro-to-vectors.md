@@ -9,8 +9,6 @@ date:   2023-12-04 06:00:00 +0000
 categories: maths linear-algebra
 
 image: "assets/posts/maths/linear-algebra/intro-to-vectors/houses.jpg"
-
-permalink: /:categories/:title
 ---
 
 Can you go on a -60 mile journey? What about trying to drive at -40mph? Wouldn’t doing either of these things be breaking some law of the universe and send you back in time or something? Fortunately for you, probably not, because measuring quantities like these using negative numbers is pretty common when we’re using **vectors**.
