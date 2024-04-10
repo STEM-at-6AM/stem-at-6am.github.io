@@ -1,4 +1,4 @@
 
-physics: ["newtonian-mechanics"]
+physics: ["newtonian-mechanics", "quantum-mechanics"]
 maths: ["linear-algebra"]
 # meta: []
