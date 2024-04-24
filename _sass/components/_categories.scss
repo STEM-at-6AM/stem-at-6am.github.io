@@ -120,3 +120,23 @@ $category-height: 150px;
         }
     }
 }
+
+#linear-algebra.category {
+    $anim-name: matrix-slide-small;
+
+    .category-anim {
+        @include lin-alg-anim-container(
+            $category-height,
+            $anim-name,
+            2
+        );
+    }
+
+    &:hover {
+        @include lin-alg-anim-container(
+            $category-height,
+            $anim-name,
+            infinite
+        );
+    }
+}

@@ -1,0 +1,86 @@
+@mixin matrix-slide($name, $increment) {
+    @keyframes #{$name} {
+        10% {
+            transform: translateX(0);
+        }
+        30%, 40% {
+            transform: translateX($increment);
+        }
+        60%, 100% {
+            transform: translateX($increment * 2);
+        }
+    }
+}
+
+@mixin appear($name, $delay, $init-pos, $repeat: infinite) {
+
+    animation: #{$name} 3s linear $repeat;
+
+    @keyframes #{$name} {
+        0%, #{$delay} {
+            opacity: 0;
+            transform: translateX($init-pos);
+        }
+        #{$delay + 10%}, 100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}
+
+@mixin lin-alg-anim-container($container-size, $anim-name, $anim-repeat) {
+
+    $col-base: $container-size * 0.15;
+    $increment: $container-size * 0.25;
+
+    // styles the enclosing matrix brackets
+    .matrix-bracket {
+        width: $container-size * 0.15;
+        height: 100%;
+
+        position: absolute;
+        bottom: $container-size * 0.03;
+    }
+    #bracket-open.matrix-bracket {
+        left: $container-size * 0.02;
+    }
+    #bracket-close.matrix-bracket {
+        left: $container-size * 0.3;
+
+        animation: $anim-name 3s linear $anim-repeat;
+        @include matrix-slide($anim-name, $increment)
+    }
+
+    // styles the matrix columns 
+    .mcol {
+        height: $container-size * 0.9;
+        width: fit-content;
+    
+        position: absolute;
+        top: $container-size * 0.05;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #mcol1.mcol {
+        left: $col-base;
+    }
+    #mcol2.mcol {
+        left: $col-base + $increment;
+        opacity: 0;
+
+        @include appear(col2-appear, 20%, $increment * -0.5, $anim-repeat);
+    }
+    #mcol3.mcol {
+        left: $col-base + $increment * 2;
+        opacity: 0;
+
+        @include appear(col3-appear, 50%, $increment * -0.5, $anim-repeat);
+    }
+
+    // styles individual matrix elements 
+    .matrix-el {
+        width: $container-size * 0.17;
+    }
+}

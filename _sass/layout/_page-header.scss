@@ -69,6 +69,14 @@ $true-header-height:  calc($header-height - $bar-height);
     );
 }
 
+#linear-algebra.header-anim {
+    @include lin-alg-anim-container(
+        $true-header-height,
+        matrix-slide-large,
+        infinite
+    );
+}
+
 #page-title {
     grid-column: {
         start: 1;
