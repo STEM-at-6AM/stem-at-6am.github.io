@@ -20,47 +20,47 @@ Maps are great.
 
 They’re so great, in fact, that if you want to know the first thing about a place, you’ll probably look at a map of it.
 
-![](assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/tourist-with-map.jpg)
+![Person with a map sits on a tree stump overlooking a forest](assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/tourist-with-map.jpg)
 
 This map tells me where buried treasure is hidden:
 
-![](assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/treasure-map.png)
+![An old-looking treasure map marking the location of buried treasure with an 'X'](assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/treasure-map.png)
 
 We say that it's a **good map** if it makes **correct predictions** about the place it's modelling. If I really do find treasure where the map tells me it is, then I'd say it's a good map!
 
-![](assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/treasure-yes.png)
+![A hole dug in the ground contains a treasure chest full of gold coins](assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/treasure-yes.png)
 
 A map that always gives **incorrect predictions** is a **bad map**, and you'd probably stop using it quite quickly.
 
-![](assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/treasure-no.png)
+![A hole dug in the ground is empty](assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/treasure-no.png)
 
 Some of the earliest maps were [made by the ancient Greeks][greek-map], but they were interested in lots of other things, too, like architecture, literature, and [banishing their politicians][greek-banish]...
 
 ...But also in **light**.
 
-![](assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/candle.jpg)
+![Close-up of a candle flame against a black background](assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/candle.jpg)
 
 Around 360BC, a Greek guy named Plato modelled light as _'streams of vision'_, or **rays**, that travelled in straight lines between our eyes and the things we see<sup>[[1]][ref1]</sup>.
 
-![](assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/visual-rays.png)
+![Three rays emerge from an eye and diverge to land on a tree](assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/visual-rays.png)
 
 Plato's version of the model had a few problems (for example, he thought these rays originated in the eyes rather than light sources like the sun), but this model was later refined by a Greek guy named Euclid, in his Book of Optics<sup>[[2]][ref2]</sup>.
 
-![](assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/book-of-optics-euclid.png)
+![A book entitled 'Book of Optics' with the author displayed as 'Euclid'](assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/book-of-optics-euclid.png)
 
 Then again by a Greek guy named Ptolemy, in his Book of Optics<sup>[[3]][ref3]</sup>.
 
-![](assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/book-of-optics-ptolemy.png)
+![The same Book of Optics as above but the name of the previous author is covered by a sticky note that reads 'Ptolemy'](assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/book-of-optics-ptolemy.png)
 
 Then again by an Arab guy named Ibn al-Haytham, in his _Kitāb al-Manāẓir_.
 
 ...or Book of Optics<sup>[[4]][ref4]</sup>.
 
-![](assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/book-of-optics-ibn-al-haytham.png)
+![The same Book of Optics as above but the previous sticky note is covered by another sticky note that reads 'Ibn al-Haytham'](assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/book-of-optics-ibn-al-haytham.png)
 
 The refined version of the ray model was very good. Why? Because it allowed us to make **correct predictions** about the behaviour of light. It could explain reflection, refraction, and even things like why pinhole cameras produced images upside down!
 
-![](assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/pinhole-camera.svg)
+![An illustration of a pinhole camera. Two rays emerge from a tree and converge at the pinhole of the camera. The rays then diverge to meet the back of the pinhole camera, where an image of the tree is displayed upside down.](assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/pinhole-camera.svg)
 
 But, in the 1600s, it became clear that it couldn't explain everything.
 
@@ -69,7 +69,8 @@ But, in the 1600s, it became clear that it couldn't explain everything.
 In 1665, a man named Francesco Grimaldi noticed that light did something strange when passing around very thin objects, specifically that it seemed to create a _series_ of light and dark areas, rather than a single shadow like the ray model would predict<sup>[[5]][ref5]</sup>:
 
 <div class="img-w-caption">
-    <img src="assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/wire-diffraction.png">
+    <img src="assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/wire-diffraction.png" 
+    alt="A series of red spots in a horizontal line displayed against a black background. The spots in the centre are brightest, and their brightness fades towards the edges of the image.">
     <small>
         © University of Massachusetts
     </small>
@@ -78,7 +79,7 @@ He called this phenomenon _diffracte_, from the Latin verb _diffringere_, meanin
 
 Additionally, just 4 years later, a man named Rasmus Bartholin observed an unusual type of refraction through what he called Iceland crystal, where everything you looked at through it appeared to be doubled, as though there was a kind of double refraction<sup>[[7]][ref7]</sup>:
 
-![](assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/double-refraction-calcite.jpg)
+![The phrase 'Double Refraction' can be seen through an Iceland crystal, except it appears doubled, with the two images slightly overlapping](assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/double-refraction-calcite.jpg)
 
 These were things that the ray model just couldn’t explain.
 
@@ -86,18 +87,19 @@ These were things that the ray model just couldn’t explain.
 
 This map is a pretty good model to use for finding buried treasure:
 
-![](assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/treasure-map.png)
+![The same treasure map as shown above](assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/treasure-map.png)
 
 but there are still a lot of things that it doesn't give me any information about! Is the treasure buried at ground level, or up on top of a hill? Do I have to walk there, or is there a bus route I could use? If I want to know about these things, I'm going to need a new map.
 
 In order to explain diffraction and double refraction, we needed a new model of light, and in the late 1600s, there were two contenders. One model proposed by Isaac Newton (yes, [_that_][newton-apple] Newton) thought of light as small 'bodies', or **particles**, which he introduced in his Book of Optics<sup>[[8]][ref8]</sup>.
 
-![](assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/book-of-optics-newton.png)
+![The same Book of Optics as above but the previous sticky note is covered by another sticky note that reads 'Newton'](assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/book-of-optics-newton.png)
 
 Newton’s book is most famous for his work on colour, where he figured out that white light is made up of all the other colours combined. Passing white light through a prism allowed you to see all the colours, he wrote, because each one was bent, or **refracted**, at a slightly different angle, separating them out.
 
 <div class="img-w-caption">
-    <img src="assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/dispersive-prism.jpg">
+    <img src="assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/dispersive-prism.jpg" 
+    alt="A beam of white light is shone at a triangular prism. Part of the beam is reflected off of the surface, but the rest moves through the prism and splits into the colours of the rainbow as it emerges from the other side.">
     <small>
         <a href="https://commons.wikimedia.org/wiki/File:Dispersive_Prism_Illustration_by_Spigget_(cropped).jpg">Spigget</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons
     </small>
@@ -109,12 +111,13 @@ Newton’s particle model seemed reasonable, but a man named Christiaan Huygens 
 
 In his book _Treatise on Light_, Huygens proposed that light was formed of waves travelling through a substance called _ether_<sup>[[9]][ref9]</sup>. He thought that each point on this ether acted as a source of small **wavelets**, which added together to form a single wave-like motion, or **wave front**.
 
-![](assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/huygens-principle.gif)
+![Circular wavelets emerge from several marked points. A line is drawn through the places where these wavelets overlap, representing wave fronts. As the wavelets move further away from their source, more wavefronts can be drawn, showing the forwards progression of a wave.](assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/huygens-principle.gif)
 
 Huygens used these wavelets to explain double refraction, proposing that they could be either spherical or ellipsoidal, and that the structure of Iceland crystal caused it to refract these shapes differently. The principle could also be used to explain diffraction, as blocking the path of some of these wavelets would naturally cause the overall wave front to curve around the object.
 
 <div class="img-w-caption">
-    <img src="assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/huygens-principle-diffraction.svg">
+    <img src="assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/huygens-principle-diffraction.svg" 
+    alt="A series of wave fronts move through a gap in an obstacle. The obstacle blocks some wavelets, meaning that the wave fronts curve outwards on the other side of the obstacle.">
     <small>
         <a href="https://commons.wikimedia.org/wiki/File:Refraction_on_an_aperture_-_Huygens-Fresnel_principle.svg">Arne Nordmann (norro)</a>, <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>, via Wikimedia Commons
     </small>
@@ -124,7 +127,7 @@ Something Huygens’ wave model didn’t explain was colour. A few decades later
 
 But despite this, Newton’s particle model was the prevailing model of light for around a century, which had absolutely nothing to do with the fact that he was president of The Royal Society of London.
 
-![](assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/royal-society-presidents.png)
+![A large wooden plaque entitled 'Presidents of The Royal Society'. A red arrow points out Isaac Newton's name. The plaque lists the years of his presidency as 1703 – 1727.](assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/royal-society-presidents.png)
 
 But it wouldn’t remain the main theory forever, because in 1801 a man named Thomas Young said that light _was_ a wave, and he could explain how, using something he called **interference**<sup>[[11]][ref11]</sup>.
 
@@ -133,7 +136,8 @@ But it wouldn’t remain the main theory forever, because in 1801 a man named Th
 Young’s **Double Slit experiment** (the first  one because there are two) involved passing a beam of light through two neighbouring slits and observing the pattern made on a far surface.
 
 <div class="img-w-caption">
-    <img src="assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/young-double-slit.png">
+    <img src="assets/posts/physics/quantum-mechanics/intro-to-quantum-mechanics/young-double-slit.png" 
+    alt="">
     <small>
         © Northumbria University 2014-24
     </small>
